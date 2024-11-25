@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/v1%40service": "file:///home/bouhmid/Desktop/projects/vote-app/k8s-specifications/result-deployment_svc.yml"
+    }
+}
