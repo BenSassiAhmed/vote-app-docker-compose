@@ -1,14 +1,12 @@
 services:
 
   vote:
-    build:
-      context: ./vote
+    image: bensassiahmed/voting-app:vote-1.0
     ports:
       - "8000:80"
 
   result:
-    build:
-      context: ./result
+    image: bensassiahmed/voting-app:result-1.0
     ports:
       - "8001:80"
 
@@ -24,9 +22,8 @@ services:
       - "db-data:/var/lib/postgresql/data"
 
   worker:
-    build:
-      context : ./worker
-  
+    image: bensassiahmed/voting-app:worker-1.0  
+
 volumes:
   db-data:
   
